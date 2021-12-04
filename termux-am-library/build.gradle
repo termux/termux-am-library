@@ -29,7 +29,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.tareksander.termux-app:termux-shared:am-integration-SNAPSHOT'
     
     
     testImplementation 'junit:junit:'

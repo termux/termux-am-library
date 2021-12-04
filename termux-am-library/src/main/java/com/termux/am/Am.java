@@ -28,8 +28,6 @@ import android.content.pm.PackageManager;
 import android.content.pm.ServiceInfo;
 import android.os.Handler;
 
-import com.termux.shared.shell.ArgumentTokenizer;
-
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.net.URISyntaxException;
@@ -48,10 +46,6 @@ public class Am extends BaseCommand {
         this.app = app;
     }
     
-    @SuppressWarnings("unused")
-    public static int callWithArgsString(String args, PrintStream out, PrintStream err, Application app) {
-        return new Am(out, err, app).run(ArgumentTokenizer.tokenize(args).toArray(new String[0]));
-    }
     
     @Override
     public void onShowUsage(PrintStream out) {
