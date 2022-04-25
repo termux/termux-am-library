@@ -10,7 +10,7 @@ android {
         minSdk project.properties.minSdkVersion.toInteger()
         targetSdk project.properties.targetSdkVersion.toInteger()
         versionCode 1
-        versionName "1.0"
+        versionName "2.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -47,7 +47,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.termux'
                 artifactId = 'termux-am'
-                version = '1.0'
+                version = '2.0.0'
                 artifact(sourceJar)
             }
         }
